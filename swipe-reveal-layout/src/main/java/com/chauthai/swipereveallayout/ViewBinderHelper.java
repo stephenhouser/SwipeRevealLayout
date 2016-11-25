@@ -207,7 +207,7 @@ public class ViewBinderHelper {
      * @param id layout which bind with this data object id will be excluded.
      * @param swipeLayout will be excluded.
      */
-    private void closeOthers(String id, SwipeRevealLayout swipeLayout) {
+    public void closeOthers(String id, SwipeRevealLayout swipeLayout) {
         synchronized (stateChangeLock) {
             // close other rows if openOnlyOne is true.
             if (getOpenCount() > 1) {
